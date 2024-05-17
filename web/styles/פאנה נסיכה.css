@@ -1,0 +1,226 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Varela Round', sans-serif;
+  height: 100vh;
+}
+nav{
+  background-color: rgb(255 255 255);
+  display: flex;
+  align-items: initial;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: black solid 2px;
+  z-index: 100;
+  padding-top: 2px;
+}
+.logo{
+  color: #fff;
+  font-size: 2em;
+  font-family: fantasy;
+}
+.logo a{
+  text-decoration: none;
+  color: #9E9E9E;
+}
+span{
+  color: tomato;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.25s;
+}
+nav ul li a:hover{
+  color: #ff5722;
+  text-shadow: 0 1px 1px #fff;
+  border-bottom: 1px #000 solid;
+  border-top: 1px #000 solid;
+  padding: 3px;
+  font-size: 1.1em;
+}
+.login-button{
+  background: linear-gradient(45deg, #FF5722, #FF9800);
+  padding: 10px;
+  box-shadow: 0 2px 5px #ff5722ed;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.login-button:hover, .login-button a:hover{  
+  color: tomato;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0 #000;
+}
+.anime-section{
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background: gray;
+  color: #fff;
+}
+.anime-content{
+  box-shadow: 3px -1px 7px 2px inset #000;
+  display: flex;
+  position: absolute;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+.anime-title{
+  position: absolute;
+  top: 50px;
+  text-decoration: underline;
+}
+.anime-info{
+  text-shadow: 0 2px 2px BLACK;
+  padding: 5px;
+}
+.anime-stats{
+  position: relative;
+  display: inline-grid;
+  align-items: start;
+  justify-items: start;
+  border-right: 2px solid #000;
+  padding-right: 10px;
+}
+.anime-image{
+  border-radius: 5px;
+}
+.anime-image:hover{
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.credit{
+  bottom: 10px;
+  position: absolute;
+}
+.eps-video-section{
+  background-color: #9e9e9efc;
+  padding: 50px;
+  box-shadow: inset 0 0 5px #000;
+  position: relative;
+  display: flex;
+  width: -webkit-fill-available;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eps-button-eps1,.eps-button-eps2, .eps-button-eps3, .eps-button-eps4
+, .eps-button-eps5, .eps-button-eps6, 
+.eps-button-eps7, .eps-button-eps8, 
+.eps-button-eps9, .eps-button-eps10,
+.eps-button-eps11, .eps-button-eps12{
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  border: solid 1px #000;
+  border-radius: 15px;
+  background-color: #9E9E9E;
+  margin: 7px;
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+  transition: 1s;
+}
+.eps-button-eps1 a, .eps-button-eps2 a,
+.eps-button-eps3 a, .eps-button-eps4 a,
+.eps-button-eps5 a, .eps-button-eps6 a,
+.eps-button-eps7 a, .eps-button-eps8 a,
+.eps-button-eps9 a, .eps-button-eps10 a,
+.eps-button-eps11 a, .eps-button-eps12 a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1em;
+}
+:where(.eps-button-eps1, .eps-button-eps2,
+.eps-button-eps3, .eps-button-eps4, 
+.eps-button-eps5, .eps-button-eps6, 
+.eps-button-eps7, .eps-button-eps8,
+.eps-button-eps9, .eps-button-eps10,
+.eps-button-eps11, .eps-button-eps12):hover{
+  border: 1px solid #fff;
+  color: white;
+  font-size: 0.9em;
+  text-shadow: 0 0 BLACK;
+  box-shadow: 0px 0px 8px 3px;
+}
+footer{
+  background-color: white;
+  font-weight: bold;
+  border-top: solid 1px #9E9E9E;
+  width: 100vw;
+  height: 2.5em;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+}
+::-webkit-scrollbar{
+  width: 7px;
+  height: 8px;
+  background-color: #aaa;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, black, transparent);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-button{
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 1100px) {
+  body{
+    width: 100vw;
+  }
+  nav{
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+  }
+  .anime-section{
+  
+  }
+  .eps-video-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
